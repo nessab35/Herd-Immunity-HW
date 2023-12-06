@@ -1,0 +1,24 @@
+
+        Population: 1000 
+        Virus name: Sniffles 
+        Initially Infected: 10 
+        Initially Vaccinated: 10
+        -------------------------------
+        Step Counter: 1 
+        New Deaths: 36 
+        New Vaccinations: 352 
+        Total Simulation Deaths: 36 
+        Total Simulation Vaccination: 372
+        -------------------------------
+        Step Counter: 2 
+        New Deaths: 90 
+        New Vaccinations: 502 
+        Total Simulation Deaths: 126 
+        Total Simulation Vaccination: 874
+        -------------------------------
+        Population Size: 1000 
+        Initially Infected: 10 
+        Initially Vaccinated: 10 
+        Total Deaths: 126 
+        Total Vaccinations: 874
+        --------------------------------
