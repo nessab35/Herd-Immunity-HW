@@ -25,7 +25,7 @@ class Simulation(object):
 
 
     def _create_population(self):
-        ''''''
+        '''creating population, some vaccinated and some infected'''
         population = []
         for i in range(0, self.pop_size):
             person = Person(i, False)
@@ -76,7 +76,7 @@ class Simulation(object):
 
 
     def time_step(self):
-        ''''''
+        '''Logs time step'''
         number_interations = 100
         living_people = [person for person in self.population if person.is_alive]
         living_infected = [person for person in living_people if person.infection]
@@ -98,7 +98,8 @@ class Simulation(object):
 
 
     def interaction(self, random_person):
-        ''''''
+        '''Checks for interactions
+        if interacts with infected person, uninfected person becomes infected'''
         new_infection = False
         if not random_person.infection and not random_person.is_vaccinated:
             random_number = random.uniform(0.0, 1.0)
@@ -109,6 +110,7 @@ class Simulation(object):
 
 
     def _infect_newly_infected(self):
+        '''Checks if person survived if survived they are vaccinated else they die'''
         living_people = [person for person in self.population if person.is_alive]
         for person in living_people:
             if person in self.newly_infected:
